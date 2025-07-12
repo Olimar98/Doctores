@@ -1,0 +1,20 @@
+<div class="consulta d-flex justify-content-center">
+    @if (empleado !== null){
+        <div class="card p-3 mt-4 d-flex flex row">
+            <img [src]="empleado.foto" alt="Foto del empleado" class="img-thumbnail me-3">
+            <div>
+                <h5 class="card-title mb-2">{{empleado.nombre}}</h5>
+                <p class="mb-1"><strong>ID:</strong> {{empleado.id}}</p>
+                <p class="mb-1"><strong>Especialidad:</strong> {{empleado.especialidad}} </p>
+                <p class="mb-1"><strong>Años de experiencia:</strong> {{empleado.anios_experiencia}}</p>
+                <p class="mb-1"><strong>Ciudad:</strong>{{empleado.ciudad}}</p>
+                <p class="mb-1"><strong>Telefono:</strong>{{empleado.foto}}</p>
+        
+            </div>
+        </div>
+    }@else{
+        <div class="alert-warning mt-4">
+            No se encontró ningún empleado con el ID {{id}}.
+        </div>
+    }
+</div>
